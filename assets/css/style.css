@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+
+/************************** DEFAULT ***************************/
+
+body {
+  margin: 0;
+  background-color: #eee;
+  font-size: 10px;
+}
+p,h2,h3,h4,h5,h6,a,li{
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #659d89;
+}
+ul {
+  list-style:none;
+  padding: 0;
+}
+
+/****** HR TAGS ********/
+hr {
+  border:none;
+  height: 1px;
+  background: rgb(209, 209, 209);
+}
+/**** HR TAGS (END)*****/
+
+/********************************************************** HEADER ****************************************************/
+
+header {
+  margin: 0;
+  padding: 50px 125px;
+}
+header h2 {
+  color: #659d89;
+  font-size: 4rem;
+  margin-top: 150px;
+  margin-bottom:0;
+  font-weight: 400;
+}
+header p:first-of-type {
+  font-size: 3rem;
+  width: 50%;
+  margin-top: 10px;
+}
+
+/*********************** NAVBAR ******************/
+header nav ul li{
+  display: inline-block;
+  font-size: .8rem;
+  padding-right: 20px;
+}
+/*********************** NAVBAR (END) *************/
+
+/*************** SOCIAL MEDIA ICONS ***********/
+header>ul {
+  text-align: right;
+}
+header>ul li{
+  padding-bottom: 10px;
+}
+header>ul li a img{
+  width: 20px;
+}
+/*************** SOCIAL MEDIA ICONS (END) *********/
+
+/******* P MIT NACH UNTEN ARROW *********/
+header p:last-of-type{
+  font-size: .8rem;
+  color: #333;
+  font-weight: 500;
+}
+header p:last-of-type::before {
+  content: '↓';
+  padding:7px;
+}
+/******* P MIT NACH UNTEN ARROW (END) *********/
+
+/********************************************************** HEADER (END) ****************************************************/
+
+
+/****************************************************** MAIN (2 SECTION) ********************************************/
+
+section {
+  margin: 50px 125px;
+}
+
+/*SECTION HEADLINES*/
+h3 {
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+/*SECTION HEADLINES (END)*/
+
+/************************************* SECTION 1 (WHATS YOUR STRUGGLE) **********************************/
+h3+p {
+  font-size: .8rem;
+}
+/********************** GIFS *******************/
+main section:first-of-type img {
+  display: inline-block;
+  margin: 30px;
+  text-align: center;
+}
+/********************** GIFS HOVER EFFECT *******************/
+main section:first-of-type img:hover {
+  box-shadow:10px 20px 20px 10px #ccc;
+}
+/************************************* SECTION 1 (WHATS YOUR STRUGGLE) END **********************************/
+
+/************************************* SECTION 2 (FEATURES RESSOURCES) **********************************/
+
+/***************************** DIV'S WITH IMAGES ************************/
+main section div {
+  width: 50%;
+  margin: 100px 100px;
+}
+main section div img {
+  width: 100%;
+}
+main section div:nth-of-type(2n+1){
+  margin-right: auto;
+}
+main section div:nth-of-type(2n){
+  margin-left: auto;
+}
+/***************************** DIV'S WITH IMAGES (END) ************************/
+/************* IMAGE TEXTS ****************/
+h4 {
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
+  font-weight: 500;
+}
+h5 {
+  font-size: .7rem;
+  text-align: center;
+  color: #666;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+h6{
+  font-size: .7rem;
+  text-align: center;
+  color: #666;
+  font-weight: 400;
+}
+/************* IMAGE TEXTS (END)****************/
+
+/*************************************************** MAIN (2 SECTION) (END) *****************************************/
+
+/*************************************************** FOOTER ******* *****************************************/
+footer {
+  text-align: center;
+}
+footer p:first-of-type {
+  padding: 100px;
+  font-size: 1.5rem;
+  color: #333;
+}
+footer p:first-of-type::before {
+  content: '↑';
+  padding:7px;
+}
+footer p:last-of-type{
+  color: #666;
+  padding-bottom: 20px;
+  font-size: .8rem;
+}
+/*************************************************** FOOTER (END) ************************************************/
